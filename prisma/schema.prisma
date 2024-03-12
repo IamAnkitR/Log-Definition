@@ -1,0 +1,94 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Search {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model On_Search {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model Select {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model On_Select {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model Init {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model On_Init {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model Confirm {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model On_Confirm {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Update {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model On_Update {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model Cancel {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model On_Cancel {
+    id        Int      @id @default(autoincrement())
+    path      String   @unique
+    definition  String  
+    createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
